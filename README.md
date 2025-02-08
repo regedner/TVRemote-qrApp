@@ -1,4 +1,4 @@
-# TV Remote QR Code Generator
+# TV Remote Application - qrApp
 
 This project is an Android application that generates a QR code for pairing a WebSocket-based remote controller with a smart TV. It was originally developed as part of a TV company's internal system, but all company-specific assets (such as logos) have been removed for public release. 
 
