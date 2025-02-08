@@ -21,11 +21,5 @@ This project is an Android application that generates a QR code for pairing a We
 - This application does not function as a standalone remote controller; it only facilitates pairing.
 - Company-specific branding has been removed, requiring manual configuration for direct usage.
 
-## License
-
-This project is open-source and available under the MIT License.
-
 ---
-
-If you encounter any issues, feel free to open an issue or contribute to the project!
 
