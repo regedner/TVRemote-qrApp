@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- App theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Diğer stil özellikleri -->
+    </style>
+
+</resources>

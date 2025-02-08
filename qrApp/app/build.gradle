@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.qrapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.qrapp"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("C:/Users/eren/Desktop/keys/atmaca_key.keystore")
+            storePassword "roward"
+            keyAlias "atmaca_key"
+            keyPassword "roward"
+        }
+
+        release {
+            storeFile file("C:/Users/eren/Desktop/keys/atmaca_key.keystore")
+            storePassword "roward"
+            keyAlias "atmaca_key"
+            keyPassword "roward"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.zxing:core:3.5.2'
+
+    implementation 'org.java-websocket:Java-WebSocket:1.5.4'
+
+
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
